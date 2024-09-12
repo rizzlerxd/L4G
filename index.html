@@ -3,99 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quvo.pro Hosting</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quvo - Free Hosting, Fast & Reliable</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-image: url('https://imgur.com/p260mjt.png');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 4px solid #0072ff;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        .btn {
+            background-color: #fff;
+            color: #0072ff;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.4s ease;
+        }
+
+        .btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .feature-box {
+            flex-basis: 30%;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 40px 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #0072ff;
+        }
+
+        .feature-box p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1rem;
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #00c6ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #0072ff;
+        }
+
+        @media (max-width: 768px) {
+            .feature-box {
+                flex-basis: 100%;
+            }
+
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+
+    </style>
 </head>
 <body>
+
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Quvo.pro Hosting</h1>
-        <p>Reliable, Scalable, Secure Hosting</p>
+        <h1>Welcome to Quvo</h1>
+        <p>Reliable, fast, and completely free hosting for everyone.</p>
+        <a href="https://discord.gg/qkD24akSvJ" class="btn">Join Quvo Today</a>
     </header>
 
-    <main>
-        <section class="hero">
-            <img src="hero-image.jpg" alt="Hosting Server">
-            <div class="hero-text">
-                <h2>Experience the Power of Quvo.pro</h2>
-                <p>Our hosting solutions are designed to meet the needs of businesses of all sizes.</p>
-                <a href="#" class="button">Get Started</a>
+    <div class="container">
+        <h2>Why Choose Quvo?</h2>
+        <div class="features">
+            <div class="feature-box">
+                <h3>Free Plan</h3>
+                <p>Start hosting for free with 4 GB of RAM and 150 CPU. No hidden costs, just pure performance.</p>
             </div>
-        </section>
+            <div class="feature-box">
+                <h3>Paid Plans</h3>
+                <p>Need more power? Upgrade easily to one of our affordable paid plans for better scaling options.</p>
+            </div>
+            <div class="feature-box">
+                <h3>24/7 Uptime</h3>
+                <p>Our infrastructure ensures that your apps run smoothly with no downtime. Always online, always fast.</p>
+            </div>
+        </div>
 
-        <section class="features">
-            <h2>Our Features</h2>
-            <div class="feature-card">
-                <img src="feature1.png" alt="Feature 1">
-                <h3>Feature 1</h3>
-                <p>Description of Feature 1</p>
-            </div>
-            <div class="feature-card">
-                <img src="feature2.png" alt="Feature 2">
-                <h3>Feature 2</h3>
-                <p>Description of Feature 2</p>
-            </div>
-            <div class="feature-card">
-                <img src="feature3.png" alt="Feature 3">
-                <h3>Feature 3</h3>
-                <p>Description of Feature 3</p>
-            </div>
-        </section>
-
-        <section class="pricing">
-            <h2>Our Pricing</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Plan</th>
-                        <th>Storage</th>
-                        <th>Bandwidth</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Basic</td>
-                        <td>10 GB</td>
-                        <td>1 TB</td>
-                        <td>$5/month</td>
-                    </tr>
-                    <tr>
-                        <td>Standard</td>
-                        <td>50 GB</td>
-                        <td>5 TB</td>
-                        <td>$10/month</td>
-                    </tr>
-                    <tr>
-                        <td>Premium</td>
-                        <td>100 GB</td>
-                        <td>Unlimited</td>
-                        <td>$20/month</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section class="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <textarea placeholder="Message"></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
+        <h2>Get Started with Quvo</h2>
+        <p>We’re here to help you scale your projects, from the smallest to the largest. Sign up and join the community today.</p>
+        <a href="https://discord.gg/qkD24akSvJ" class="btn">Join Our Discord</a>
+    </div>
 
     <footer>
-        <p>&copy; 2023 Quvo.pro Hosting</p>
+        <p>&copy; 2024 Quvo. All Rights Reserved.</p>
+        <p>Follow us on <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
     </footer>
+
 </body>
 </html>
