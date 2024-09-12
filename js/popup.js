@@ -1,12 +1,19 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Show the popup after 1 second
-    setTimeout(function () {
-        document.getElementById('popup').style.left = '0';
-    }, 1000);
+document.addEventListener("DOMContentLoaded", function() {
+    const popup = document.getElementById('popup');
+    const close = document.getElementById('close');
 
-    // Hide the popup and show the main content when the button is clicked
-    document.querySelector('.btn-primary').addEventListener('click', function () {
-        document.getElementById('popup').style.left = '-100%';
-        document.querySelector('.main-content').style.display = 'block';
+    // Show the popup
+    popup.style.display = 'flex';
+
+    // Close the popup
+    close.addEventListener('click', function() {
+        popup.style.display = 'none';
+    });
+
+    // Optionally, you can also close the popup when clicking outside of it
+    window.addEventListener('click', function(event) {
+        if (event.target === popup) {
+            popup.style.display = 'none';
+        }
     });
 });
