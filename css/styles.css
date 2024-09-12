@@ -1,218 +1,93 @@
-/* General Styles */
-* {
+/* General Reset */
+body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100%;
+    font-family: Arial, sans-serif;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #000;
-    color: #fff;
-}
-
-/* Navigation Bar */
-header {
-    background-color: rgba(0, 0, 0, 0.8);
-    position: fixed;
-    width: 100%;
+/* Background */
+.background {
+    position: absolute;
     top: 0;
     left: 0;
-    z-index: 1000;
-    padding: 10px 0;
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo a {
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #ff5722;
-}
-
-/* Hero Section */
-.hero {
-    height: 100vh;
-    background-image: url('https://imgur.com/p260mjt.png');
+    width: 100%;
+    height: 100%;
+    background-image: url('https://imgur.com/XmIBsT5.png');
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: -1;
 }
 
-.hero-content {
+/* Popup Styles */
+.popup {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.5s ease-in-out;
+}
+
+.popup-content {
     text-align: center;
 }
 
-.hero h1 {
-    font-size: 4rem;
-    animation: slideInRight 1.5s forwards;
+.popup h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
 }
 
-.hero p {
-    font-size: 1.5rem;
-    margin: 20px 0;
-    animation: fadeIn 2s forwards;
+.popup p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
 }
 
 .btn-primary {
-    background-color: #ff5722;
-    padding: 15px 30px;
-    border-radius: 50px;
-    font-size: 1.2rem;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
     color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s;
-    animation: fadeInUp 2.5s forwards;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .btn-primary:hover {
-    background-color: #e64a19;
+    background-color: #fff;
+    color: #000;
 }
 
-/* Features Section */
-.features-section {
-    padding: 80px 0;
-    background-color: #111;
+/* Main Content Styles */
+.main-content {
+    display: none; /* Hidden initially */
     text-align: center;
-}
-
-.features-grid {
-    display: flex;
-    justify-content: space-between;
-}
-
-.feature-item {
-    width: 30%;
-    background-color: #222;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
-
-/* Pricing Section */
-.pricing-section {
-    padding: 80px 0;
-    background-color: #000;
-}
-
-.pricing-grid {
-    display: flex;
-    justify-content: space-between;
-}
-
-.pricing-card {
-    width: 30%;
-    background-color: #222;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
-
-.pricing-card h3 {
-    font-size: 1.8rem;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
 }
 
 .btn-secondary {
-    background-color: #ff5722;
+    display: inline-block;
     padding: 10px 20px;
-    border-radius: 50px;
-    color: #fff;
+    font-size: 1em;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .btn-secondary:hover {
-    background-color: #e64a19;
-}
-
-/* FAQ Section */
-.faq-section {
-    padding: 80px 0;
-    background-color: #111;
-}
-
-.faq-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.faq-item {
-    width: 80%;
-    background-color: #222;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-/* Footer */
-footer {
-    padding: 20px 0;
     background-color: #000;
-    text-align: center;
-}
-
-/* Animations */
-@keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    color: #fff;
 }
