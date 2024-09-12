@@ -33,6 +33,7 @@ body, html {
     align-items: center;
     justify-content: center;
     transition: left 0.5s ease-in-out;
+    z-index: 1;
 }
 
 .popup-content {
@@ -73,6 +74,7 @@ body, html {
     padding: 50px;
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
+    z-index: 0;
 }
 
 .btn-secondary {
