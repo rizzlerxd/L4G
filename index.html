@@ -3,125 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Your Product - Landing Page</title>
+    <title>Quvo - Join Now</title>
 
     <!-- Link to External CSS -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google Font for Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Pop-up Modal -->
-    <div class="popup-modal" id="popup">
-        <div class="popup-content">
-            <h2>Welcome to [Your Product]</h2>
-            <p>Discover more about our amazing service! Join us or learn more below.</p>
-            <button class="cta-btn" id="close-popup">Learn More</button>
-        </div>
-    </div>
-
-    <!-- Landing Page Content -->
+    <!-- Navigation Bar -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#faq">FAQs</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#hero">Quvo.pro</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Introducing [Your Product]</h1>
-            <p>Revolutionizing the way you do things. Join now and experience it for yourself!</p>
-            <a href="#cta-section" class="btn cta-main">Join Now</a>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Quvo.pro</h1>
+            <p>Your Next Hosting Solution</p>
+            <a href="#pricing" class="btn-primary">Join Quvo Now</a>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section id="features">
+    <section id="features" class="features-section">
         <div class="container">
-            <h2>Key Features</h2>
+            <h2>Why Choose Quvo?</h2>
             <div class="features-grid">
-                <div class="feature">
-                    <h3>Feature 1</h3>
-                    <p>Description of feature 1.</p>
+                <div class="feature-item">
+                    <h3>Scalable Performance</h3>
+                    <p>Get top-notch server performance that scales with your needs.</p>
                 </div>
-                <div class="feature">
-                    <h3>Feature 2</h3>
-                    <p>Description of feature 2.</p>
+                <div class="feature-item">
+                    <h3>Reliable Uptime</h3>
+                    <p>99.99% uptime to keep your services running smoothly.</p>
                 </div>
-                <div class="feature">
-                    <h3>Feature 3</h3>
-                    <p>Description of feature 3.</p>
+                <div class="feature-item">
+                    <h3>24/7 Support</h3>
+                    <p>We are always here to help, no matter the time.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing">
+    <section id="pricing" class="pricing-section">
         <div class="container">
             <h2>Pricing Plans</h2>
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <h3>Basic</h3>
-                    <p>Details of the basic plan.</p>
-                    <a href="#" class="btn">Get Started</a>
+                    <h3>Free Plan</h3>
+                    <p>Includes 4 GB RAM and 150 CPU.</p>
+                    <a href="#" class="btn-secondary">Get Started</a>
                 </div>
                 <div class="pricing-card">
-                    <h3>Pro</h3>
-                    <p>Details of the pro plan.</p>
-                    <a href="#" class="btn">Get Started</a>
+                    <h3>Pro Plan</h3>
+                    <p>For advanced users with bigger projects.</p>
+                    <a href="#" class="btn-secondary">Choose Pro</a>
                 </div>
                 <div class="pricing-card">
-                    <h3>Enterprise</h3>
-                    <p>Details of the enterprise plan.</p>
-                    <a href="#" class="btn">Get Started</a>
+                    <h3>Enterprise Plan</h3>
+                    <p>Customized resources for businesses.</p>
+                    <a href="#" class="btn-secondary">Contact Sales</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq">
+    <section id="faq" class="faq-section">
         <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-item">
-                <h3>What is [Your Product]?</h3>
-                <p>Answer to this question.</p>
+            <h2>FAQs</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>What is Quvo?</h4>
+                    <p>Quvo is a powerful, scalable hosting service designed for everyone.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do I get started?</h4>
+                    <p>Simply sign up with one of our plans to get started.</p>
+                </div>
             </div>
-            <div class="faq-item">
-                <h3>How does it work?</h3>
-                <p>Answer to this question.</p>
-            </div>
-            <div class="faq-item">
-                <h3>What are the pricing options?</h3>
-                <p>Answer to this question.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>If you have any questions, feel free to contact us at <a href="mailto:contact@yourproduct.com">contact@yourproduct.com</a></p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 [Your Product]. All rights reserved.</p>
+            <p>&copy; 2024 Quvo.pro. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- JavaScript for Pop-up Control -->
-    <script src="js/popup.js"></script>
+    <!-- JavaScript for Interactive Features -->
+    <script src="js/script.js"></script>
 </body>
 </html>
