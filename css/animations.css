@@ -1,7 +1,12 @@
-/* Fade-in animation */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1.5s forwards;
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 @keyframes fadeIn {
@@ -11,14 +16,4 @@
     100% {
         opacity: 1;
     }
-}
-
-/* Button Hover Animation */
-.btn {
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.btn:hover {
-    transform: scale(1.05);
-    background-color: #f0f0f0;
 }
