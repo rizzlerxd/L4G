@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Quvo.pro - Join Now!</title>
+    <title>Your Product - Landing Page</title>
 
     <!-- Link to External CSS -->
     <link rel="stylesheet" href="css/main.css">
@@ -12,11 +12,116 @@
 </head>
 <body>
 
-    <div class="container">
-        <h1 class="title">Quvo.pro</h1>
-        <p class="subtitle">Join Quvo Now!</p>
-        <a href="https://discord.gg/qkD24akSvJ" class="btn">Join Now</a>
+    <!-- Pop-up Modal -->
+    <div class="popup-modal" id="popup">
+        <div class="popup-content">
+            <h2>Welcome to [Your Product]</h2>
+            <p>Discover more about our amazing service! Join us or learn more below.</p>
+            <button class="cta-btn" id="close-popup">Learn More</button>
+        </div>
     </div>
 
+    <!-- Landing Page Content -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Introducing [Your Product]</h1>
+            <p>Revolutionizing the way you do things. Join now and experience it for yourself!</p>
+            <a href="#cta-section" class="btn cta-main">Join Now</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>Feature 1</h3>
+                    <p>Description of feature 1.</p>
+                </div>
+                <div class="feature">
+                    <h3>Feature 2</h3>
+                    <p>Description of feature 2.</p>
+                </div>
+                <div class="feature">
+                    <h3>Feature 3</h3>
+                    <p>Description of feature 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <div class="container">
+            <h2>Pricing Plans</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Basic</h3>
+                    <p>Details of the basic plan.</p>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Pro</h3>
+                    <p>Details of the pro plan.</p>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <p>Details of the enterprise plan.</p>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What is [Your Product]?</h3>
+                <p>Answer to this question.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How does it work?</h3>
+                <p>Answer to this question.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What are the pricing options?</h3>
+                <p>Answer to this question.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to contact us at <a href="mailto:contact@yourproduct.com">contact@yourproduct.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 [Your Product]. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Pop-up Control -->
+    <script src="js/popup.js"></script>
 </body>
 </html>
