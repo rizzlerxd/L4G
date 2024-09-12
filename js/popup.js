@@ -1,10 +1,12 @@
-// JavaScript for interactive pop-up effect
-document.addEventListener("DOMContentLoaded", function() {
-    const popup = document.querySelector('.hero-content');
-    popup.style.transform = 'translateX(100%)';
-    
-    setTimeout(() => {
-        popup.style.transition = 'transform 1s ease-in-out';
-        popup.style.transform = 'translateX(0)';
-    }, 500);
+document.addEventListener('DOMContentLoaded', function () {
+    // Show the popup after 1 second
+    setTimeout(function () {
+        document.getElementById('popup').style.left = '0';
+    }, 1000);
+
+    // Hide the popup and show the main content when the button is clicked
+    document.querySelector('.btn-primary').addEventListener('click', function () {
+        document.getElementById('popup').style.left = '-100%';
+        document.querySelector('.main-content').style.display = 'block';
+    });
 });
